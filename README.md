@@ -1,11 +1,12 @@
 ## Hi, I'm Harshith 👋
 
-**Software Engineer: DevSecOps, Cloud & Data** · MSc Data Science, Middlesex University · UK
+**Software Engineer: DevOps Tooling, Cloud & AI** · MSc Data Science, Middlesex University · UK
 
-I build secure, well-tested services and the pipelines that ship them: Python
-and FastAPI, Docker and Kubernetes, GitHub Actions with security gates, and
-data pipelines with DuckDB and scikit-learn. I'm looking for a graduate
-**Software Engineer / DevSecOps** role in the UK.
+I build well-tested services and the tooling that ships them: Python and
+FastAPI, Docker and Kubernetes, GitHub Actions pipelines with security gates,
+and data pipelines with DuckDB and scikit-learn. I also build AI-powered DevOps
+tools with LLMs such as Claude (Anthropic) and OpenAI GPT models. I'm looking for a graduate
+**Software Engineer / DevOps** role in the UK.
 
 ### Featured projects
 
@@ -15,6 +16,12 @@ data pipelines with DuckDB and scikit-learn. I'm looking for a graduate
 - Transactional outbox → **RabbitMQ** → risk-monitor consumer, with idempotent processing and a dead-letter queue
 - CI gates: pytest (≥90% coverage), Semgrep, Bandit, CodeQL, Gitleaks, pip-audit, Checkov, Grype + SBOM, then deploy to Kubernetes and run end-to-end tests
 - **Terraform** for AWS (KMS, ECR, CloudWatch, Secrets Manager, GitHub OIDC), Prometheus alerts with unit tests, a Grafana dashboard, runbooks, and a **PCI DSS v4.0** control mapping
+
+**[AI DevOps Agents](https://github.com/harshithkonatham/dev-toolkit/tree/main/tools/ai-agents)**: LLM-powered tools that take repetitive work off DevOps teams
+
+- AI pull-request reviewer that runs in **GitHub Actions** and uses the **Claude API** (Anthropic SDK)
+- Incident responder that triages alerts and drafts runbooks; a **CrewAI** team of DevOps agents
+- [LLM-Ops model benchmark](https://github.com/harshithkonatham/dev-toolkit/tree/main/tools/llm-ops) that compares models on quality, speed and cost per call
 
 **[Flight Delay Prediction](https://github.com/harshithkonatham/prediction-for-airline-flight-delays)**: my MSc dissertation, rebuilt as a data pipeline and prediction API
 
@@ -28,11 +35,12 @@ data pipelines with DuckDB and scikit-learn. I'm looking for a graduate
 |---|---|
 | Languages | Python, SQL, Java, JavaScript |
 | Backend & messaging | FastAPI, REST APIs, RabbitMQ, SQLite / MySQL |
-| CI/CD & DevSecOps | GitHub Actions, Docker, Kubernetes, Semgrep, Bandit, CodeQL, Gitleaks, pip-audit, Grype, Checkov, SBOM |
+| CI/CD & DevOps tooling | GitHub Actions, Docker, Kubernetes, Semgrep, Bandit, CodeQL, Gitleaks, pip-audit, Grype, Checkov, SBOM |
 | Cloud & IaC | AWS (EC2, S3, IAM, VPC, CloudWatch, KMS, ECR), Terraform |
 | Observability | Prometheus, Grafana, structured logging |
 | Data & ML | Pandas, NumPy, DuckDB, Parquet, scikit-learn, Matplotlib |
 | Testing & quality | pytest (unit, integration, e2e), mypy, Ruff |
+| AI & LLMs | Claude API (Anthropic SDK), OpenAI API (GPT models), CrewAI, LangChain, LiteLLM, Ollama |
 | AI-assisted development | Claude Code, GitHub Copilot |
 
 ### Certifications
