@@ -16,6 +16,12 @@ tools with LLMs such as Claude (Anthropic) and OpenAI GPT models. I'm looking fo
 - Every number comes from a real tool (pandas, scikit-learn); every finding must cite the tool call behind it, and the Reviewer flags overclaims before they reach the report
 - Offline mode runs the same tools without an API key; 20 tests, ~97% coverage, CI with security scans
 
+**[Security Triage Bot](https://github.com/harshithkonatham/security-triage-bot)**: Claude sorts security-scanner findings into real issues, false alarms and "needs a human"
+
+- Reads SARIF from any scanner (Semgrep, Bandit, CodeQL, Checkov, Gitleaks), merges duplicates across tools, and shows Claude a numbered excerpt of the flagged code
+- Guardrails: paths must stay inside the repo, secrets are redacted before code leaves the machine, prompt injection in code comments sends the finding to a human, and verdicts without valid evidence lines are downgraded
+- Scored against a labelled benchmark where the key metric is *dangerous dismissals* (real issues called false alarms); 57 tests, strict mypy, CI with security scans
+
 **[Edge IoT Anomaly Agent](https://github.com/harshithkonatham/edge-iot-anomaly-agent)**: predictive maintenance for industrial motors (combines my ECE degree with data science)
 
 - Streaming detector (robust z-score + stuck-sensor check) small enough for an edge gateway; sensor history in **DuckDB**
@@ -57,7 +63,7 @@ tools with LLMs such as Claude (Anthropic) and OpenAI GPT models. I'm looking fo
 
 ### Education
 
-- **MSc Data Science with Integrated Placement**, Middlesex University, London (Jan 2025 – present): Machine Learning Foundations, Applied Data Analytics, Big Data Systems, Cloud Architecture. Thesis: *Cloud-Native ML Platform Engineering on Kubernetes*
+- **MSc Data Science with Integrated Placement**, Middlesex University, London (Jan 2025 – Jan 2027, expected): Machine Learning Foundations, Applied Data Analytics, Big Data Systems, Cloud Architecture. Dissertation: *Airline Flight Delay Prediction*
 - **BTech Electronics & Communication**, Sir C R Reddy College of Engineering, India (2020 – 2024): First Class Honours; elected President of the IETE Student Chapter
 
 ### Certifications
